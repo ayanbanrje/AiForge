@@ -45,7 +45,8 @@ const styles = StyleSheet.create({
     marginLeft: 10,                  // Space between each right text
     whiteSpace: 'nowrap',            // Prevent wrapping
     overflow: 'hidden',              // Hide overflow
-    textOverflow: 'ellipsis',         // Show ellipsis for overflowing text
+    textOverflow: 'ellipsis', 
+    fontFamily: 'BoschSans-Bold',        // Show ellipsis for overflowing text
   },
 });
 
