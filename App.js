@@ -1,24 +1,34 @@
-// import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native';
-import Main from './src/Main';
+// src/App.js
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import AppNavigator from './src/navigation/AppNavigator';  // Import the separated AppNavigator
+import Menu from './src/components/Menu';  // Menu is always visible
 
-export default function App() {
+import Header from './src/components/Header/Header';
+import Footer from './src/components/Footer/Footer';
+
+const App = () => {
   return (
-    // <View style={styles.container}>
-    //   <Text>Open up App.js to start working on your app!</Text>
-    //   <StatusBar style="auto" />
-    // </View>
-    <SafeAreaView style={styles.SafeAreaView}>
-      <Main/>
-    </SafeAreaView>
-  );
-}
+    <View style={styles.container}>
+      {/* Menu will always be displayed */}
 
+
+      {/* Navigation system */}
+      <NavigationContainer>
+        <Header title="My App" />
+        <Menu />
+        <AppNavigator />
+      </NavigationContainer>
+    </View>
+  );
+};
+
+export default App;
 
 const styles = StyleSheet.create({
-  SafeAreaView: {
-     width: "100%"
-  }
+  container: {
+    // flex: 1,
+    // paddingTop: 50,  // Add padding if needed for space above menu
+  },
 });
-
