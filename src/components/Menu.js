@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
         marginHorizontal:10,
         marginVertical:5,
         fontSize: 16,
+        fontFamily:'BoschSans',
         color: 'black', // Default text color
     },
     activeMenuText: {
