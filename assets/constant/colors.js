@@ -8,6 +8,7 @@ const Colors = {
     background: '#f8f8f8', // Background color
     textBlue: '#3498db', // Blue text color
     separator: 'gray', // Color for the separator
+    blue:'#007BC0'
     // Add more colors as needed
 };
 

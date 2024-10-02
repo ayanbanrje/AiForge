@@ -122,6 +122,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         borderColor:Colors.lightGray,
         borderTopWidth:2,
+        justifyContent:'space-between'
     },
 });
 
