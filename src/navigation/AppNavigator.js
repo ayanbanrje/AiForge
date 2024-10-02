@@ -11,7 +11,7 @@ const Stack = createStackNavigator();
 
 const AppNavigator = () => {
     return (
-        <Stack.Navigator initialRouteName="CreateNewProject">
+        <Stack.Navigator initialRouteName="NodeConfiguration">
             <Stack.Screen name="CreateNewProject" component={CreateNewProject} options={{ headerShown: false }}  />
             <Stack.Screen name="ModuleExtension" component={ModuleExtension} options={{ headerShown: false }} />
             <Stack.Screen name="NodeConfiguration" component={NodeConfiguration} options={{ headerShown: false }} />
