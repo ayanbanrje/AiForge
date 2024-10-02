@@ -19,6 +19,7 @@ const App = () => {
         <Header title="My App" />
         <Menu />
         <AppNavigator />
+        <Footer/>
       </NavigationContainer>
     </View>
   );
@@ -28,7 +29,7 @@ export default App;
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
+    flex: 1,
     // paddingTop: 50,  // Add padding if needed for space above menu
   },
 });

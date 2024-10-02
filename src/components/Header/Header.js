@@ -36,6 +36,7 @@ const Header = ({ title }) => {
 
 const styles = StyleSheet.create({
     header: {
+        overflow:'hidden',
         flexDirection: "column",
         borderBottomWidth: 1,
         borderBottomColor: '#e1e1e1',
@@ -58,12 +59,12 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     textBlueBold: {
-        fontSize: 20,
+        fontSize: width>786?24:20,
         fontWeight: 'bold',
         color: Colors.primary,
     },
     textBlackNormal:{
-        fontSize: 16,
+        fontSize: width>786?18:12,
         fontFamily:"BoschSans",
         // fontWeight: 'bold',
         color: 'black',
@@ -74,8 +75,8 @@ const styles = StyleSheet.create({
         
     },
     icon: {
-        width: 30, // Adjust size as necessary
-        height: 30, // Adjust size as necessary
+        width: width>786?30:30, // Adjust size as necessary
+        width: width>786?30:30, // Adjust size as necessary
     },
     supergraphic: {
         width: '100%', // Ensure full width for the supergraphic

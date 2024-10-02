@@ -12,11 +12,11 @@ const Stack = createStackNavigator();
 const AppNavigator = () => {
     return (
         <Stack.Navigator initialRouteName="CreateNewProject">
-            <Stack.Screen name="CreateNewProject" component={CreateNewProject} />
-            <Stack.Screen name="ModuleExtension" component={ModuleExtension} />
-            <Stack.Screen name="NodeConfiguration" component={NodeConfiguration} />
-            <Stack.Screen name="DataSets" component={DataSets} />
-            <Stack.Screen name="MarketPlace" component={MarketPlace} />
+            <Stack.Screen name="CreateNewProject" component={CreateNewProject} options={{ headerShown: false }}  />
+            <Stack.Screen name="ModuleExtension" component={ModuleExtension} options={{ headerShown: false }} />
+            <Stack.Screen name="NodeConfiguration" component={NodeConfiguration} options={{ headerShown: false }} />
+            <Stack.Screen name="DataSets" component={DataSets} options={{ headerShown: false }} />
+            <Stack.Screen name="MarketPlace" component={MarketPlace} options={{ headerShown: false }} />
         </Stack.Navigator>
     );
 };

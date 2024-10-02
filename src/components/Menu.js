@@ -15,7 +15,6 @@ const Menu = () => {
     ];
 
     return (
-        <View style={{ flex: 1 }}>
             <View style={styles.menuContainer}>
                 {menuItems.map((item, index) => (
                     <TouchableOpacity
@@ -27,7 +26,6 @@ const Menu = () => {
                     </TouchableOpacity>
                 ))}
             </View>
-        </View>
     );
 };
 
