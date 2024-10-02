@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     whiteSpace: 'nowrap',            // Prevent wrapping
     overflow: 'hidden',              // Hide overflow
     textOverflow: 'ellipsis',         // Show ellipsis for overflowing text
+    fontFamily: 'BoschSans-Bold',
   },
   rightTextContainer: {
     flexDirection: 'row',            // Row direction for right text items

@@ -14,6 +14,7 @@ const Main = () => {
                 <NavigationContainer>
                     <AppNavigator />
                 </NavigationContainer>
+            <Footer/>
         </>
             
     );
